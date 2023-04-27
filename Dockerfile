@@ -1,9 +1,14 @@
-FROM flywheel/python:main.a30a2597 AS deps
+FROM python:3.9.7-slim-buster
 
 ENV FLYWHEEL="/flywheel/v0"
 WORKDIR ${FLYWHEEL}
 
+RUN apt-get update \
+&& apt-get install gcc -y \
+&& apt-get clean
+
 # Install main deps
+RUN pip install poetry
 COPY pyproject.toml poetry.lock $FLYWHEEL/
 RUN poetry install --no-dev --no-root
 
