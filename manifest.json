@@ -1,0 +1,47 @@
+{
+  "author": "D3b-TIRU",
+  "command": "poetry run python run.py",
+  "config": {
+    "debug": {
+      "default": false,
+      "description": "Log debug messages",
+      "type": "boolean"
+    }
+  },
+  "custom": {
+    "flywheel": {
+      "suite": "D3b-TIRU"
+    },
+    "gear-builder": {
+      "category": "utility",
+      "image": "chop.flywheel.io/d3b-extract-slide-metadata:0.0.0"
+    }
+  },
+  "environment": {
+    "PATH": "/opt/poetry/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+    "PYTHON_VERSION": "3.9.7",
+    "PIP_NO_CACHE_DIR": "0",
+    "POETRY_HOME": "/opt/poetry",
+    "POETRY_VERSION": "1.1.11",
+    "POETRY_VIRTUALENVS_CREATE": "false",
+    "FLYWHEEL": "/flywheel/v0"
+  },
+  "inputs": {
+    "api-key": {
+      "base": "api-key",
+      "read-only": true
+    },
+    "input-file": {
+        "base": "file",
+        "description": "Input file.",
+        "optional": false
+    }
+  },
+  "label": "Extract pathology slide metadata",
+  "description": "This tool uses OpenSlide to extract file metadata from a pathology slide and import as Flywheel metadata.",
+  "license": "Apache-2.0",
+  "maintainer": "D3b-TIRU <flywheel@d3b.center>",
+  "name": "d3b-extract-slide-metadata",
+  "source": "https://github.com/d3b-center/fw-extract-slide-metadata", 
+  "version": "0.0.0"
+}
