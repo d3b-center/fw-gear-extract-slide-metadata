@@ -8,21 +8,10 @@ import typing as t
 from pathlib import Path
 
 from flywheel_gear_toolkit import GearToolkitContext
-from fw_meta import MetaData
-from pydicom.tag import BaseTag
 
 AnyPath = t.Union[str, Path]
 
 log = logging.getLogger(__name__)
-
-# From https://gitlab.com/flywheel-io/product/backend/core-api/-/blob/master/core/models/file_types.py
-FILETYPES = {
-    "dicom": [".dcm", ".dcm.zip", ".dicom.zip", ".dicom"],
-    "nifti": [".nii.gz", ".nii", ".nifti"],
-    "ParaVision": [".pv5.zip", ".pv6.zip"],
-}
-# Adding additional file types
-FILETYPES.update({"ptd": [".ptd"]})
 
 
 def get_startswith_lstrip_dict(dict_: t.Dict, startswith: str) -> t.Dict:
@@ -66,14 +55,14 @@ def sanitize_modality(modality: str):
 
 
 def create_metadata(
-    context: GearToolkitContext, fe: t.Dict, meta: MetaData
+    context: GearToolkitContext, fe, meta
 ):
     """Populate .metadata.json.
 
     Args:
         context (GearToolkitContext): The gear context.
         fe (dict): A dictionary containing the file attributes to update.
-        meta (MetaData): A MetaData containing the file "metadata" (parents container info)
+        meta (MetaData): A MetaData containing the file "metadata" (parents container info) (from fw_meta import MetaData)
     """
     file_input = context.get_input("input-file")
 
@@ -117,8 +106,6 @@ def remove_empty_values(d: t.Dict, recurse=True) -> t.Dict:
     for k, v in d.items():
         if isinstance(v, dict) and recurse:
             d_copy[k] = remove_empty_values(v, recurse=recurse)
-        if isinstance(v, BaseTag):
-            continue
         if v == "" or v is None or v == [] or v == {}:
             d_copy.pop(k)
     return d_copy
