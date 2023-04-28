@@ -7,6 +7,9 @@ RUN apt-get update \
 && apt-get install gcc -y \
 && apt-get clean
 
+RUN apt-get install openslide-tools --yes
+RUN apt-get install python-openslide --yes
+
 # Install main deps
 RUN pip install poetry
 COPY pyproject.toml poetry.lock $FLYWHEEL/
