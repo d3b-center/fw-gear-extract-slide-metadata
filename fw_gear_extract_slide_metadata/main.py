@@ -15,9 +15,7 @@ log = logging.getLogger(__name__)
 fw_context = flywheel.GearContext()
 fw = fw_context.client
 
-def process(
-    input_path: AnyPath, siemens_csa: bool = False, derived: bool = False
-) -> t.Tuple[t.Dict, MetaData, t.Dict]:
+def process(input_path):
     """Process `file_path` and returns a `flywheel.FileEntry` and its corresponding meta.
 
     Args:
@@ -43,8 +41,7 @@ def process(
     fe = {"modality": 'SM - Slide Microscopy', "info": file_dictionary}
     return fe
 
-def run(
-    file_path):
+def run(file_path):
     """Processes file at file_path.
 
     Args:
