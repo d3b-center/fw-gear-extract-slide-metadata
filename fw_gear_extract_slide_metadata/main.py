@@ -28,8 +28,8 @@ def process(input_path):
     obj = openslide.OpenSlide(input_path)
     file_dictionary = {}
     # add dimensions
-    file_dictionary['Width'] = obj.dimensions[0]
-    file_dictionary['Height'] = obj.dimensions[1]
+    file_dictionary['Dimensions.Width'] = obj.dimensions[0]
+    file_dictionary['Dimensions.Height'] = obj.dimensions[1]
     # add properties
     for item in obj.properties:
         tag_name = '.'.join(item.split('.')[1:]) # remove the leading word
