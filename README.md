@@ -4,11 +4,11 @@ This gear uses OpenSlide to extract file metadata from a pathology slide file an
 
 ## Usage
 
-Run at the session-level (either in batch or on a single session).
+Run at the file-level.
 
 ### Inputs
 
-File to process 
+* input-file: File to process 
 
 ### Configuration
 
@@ -18,4 +18,4 @@ File to process
 
 Current limitations of the gear are as follows:
 
-* 
+* this gear was tested with Aperio SVS files only, future testing may be necessary for additional file types (although OpenSlide can handle multiple file types)
