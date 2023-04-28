@@ -10,11 +10,11 @@
   },
   "custom": {
     "flywheel": {
-      "suite": "D3b-TIRU"
+      "suite": "OpenSlide"
     },
     "gear-builder": {
       "category": "utility",
-      "image": "chop.flywheel.io/d3b-extract-slide-metadata:0.0.1-1"
+      "image": "chop.flywheel.io/d3b-extract-slide-metadata:0.0.2"
     }
   },
   "environment": {
@@ -43,5 +43,5 @@
   "maintainer": "D3b-TIRU <flywheel@d3b.center>",
   "name": "d3b-extract-slide-metadata",
   "source": "https://github.com/d3b-center/fw-extract-slide-metadata", 
-  "version": "0.0.1-1"
+  "version": "0.0.2"
 }
