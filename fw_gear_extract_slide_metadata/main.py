@@ -20,12 +20,10 @@ def process(input_path):
 
     Args:
         input_path (Path-like): Path to input-file.
-        siemens_csa (bool): If True, extracts Siemens CSA header (Default: False).
 
     Returns:
         dict: Dictionary of file attributes to update.
         dict: Dictionary containing the file meta.
-        dict: Dictionary containing the qc metrics.
     """
     obj = openslide.OpenSlide(input_path)
     file_dictionary = {}
@@ -55,6 +53,7 @@ def run(file_path):
         dict: Dictionary containing the file meta.
 
     """
-    fe, meta = process(
+    fe = process(
         file_path
     )
+    return fe

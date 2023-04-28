@@ -55,7 +55,7 @@ def sanitize_modality(modality: str):
 
 
 def create_metadata(
-    context: GearToolkitContext, fe, meta
+    context: GearToolkitContext, fe
 ):
     """Populate .metadata.json.
 
@@ -88,8 +88,8 @@ def create_metadata(
     # https://flywheelio.atlassian.net/browse/GEAR-868
     # Subject needs to be updated on session in old-core
     # These two lines make this gear compatible with 15.x.x and 14.x.x
-    sub = context.metadata._metadata.pop("subject")
-    context.metadata._metadata.get("session").update({"subject": sub})
+    # sub = context.metadata._metadata.pop("subject")
+    # context.metadata._metadata.get("session").update({"subject": sub})
 
 
 def remove_empty_values(d: t.Dict, recurse=True) -> t.Dict:
