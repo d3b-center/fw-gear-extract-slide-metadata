@@ -14,7 +14,7 @@
     },
     "gear-builder": {
       "category": "utility",
-      "image": "chop.flywheel.io/d3b-extract-slide-metadata:0.0.2"
+      "image": "chop.flywheel.io/d3b-extract-slide-metadata:0.1.0"
     }
   },
   "environment": {
@@ -37,11 +37,11 @@
         "optional": false
     }
   },
-  "label": "Extract pathology slide metadata",
-  "description": "This tool uses OpenSlide to extract file metadata from a pathology slide and import as Flywheel metadata.",
+  "label": "Extract slide metadata",
+  "description": "This tool uses OpenSlide to extract file metadata from a digital slide and import as Flywheel file metadata.",
   "license": "Apache-2.0",
   "maintainer": "D3b-TIRU <flywheel@d3b.center>",
   "name": "d3b-extract-slide-metadata",
   "source": "https://github.com/d3b-center/fw-extract-slide-metadata", 
-  "version": "0.0.2"
+  "version": "0.1.0"
 }
