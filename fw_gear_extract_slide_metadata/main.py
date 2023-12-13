@@ -1,7 +1,7 @@
 """Main module."""
 import logging
 import os
-
+from pathlib import Path
 import openslide
 
 from fw_core_client import CoreClient
@@ -26,10 +26,14 @@ def process(input_path):
         dict: Dictionary containing the file meta.
     """
     obj = openslide.OpenSlide(input_path)
+    file_name = Path(input_path).stem
+    file_name = file_name.split('_')
     file_dictionary = {}
     # add dimensions
     file_dictionary['Dimensions.Width'] = obj.dimensions[0]
     file_dictionary['Dimensions.Height'] = obj.dimensions[1]
+    # adding stain info
+    file_dictionary['Staintype'] = file_name[0]
     # add properties
     for item in obj.properties:
         tag_name = '.'.join(item.split('.')[1:]) # remove the leading word
