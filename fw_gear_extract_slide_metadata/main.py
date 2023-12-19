@@ -33,7 +33,7 @@ def process(input_path):
     file_dictionary['Dimensions.Width'] = obj.dimensions[0]
     file_dictionary['Dimensions.Height'] = obj.dimensions[1]
     # adding stain info
-    file_dictionary['Staintype'] = file_name[0]
+    file_dictionary['stain_type'] = file_name[0]
     # add properties
     for item in obj.properties:
         tag_name = '.'.join(item.split('.')[1:]) # remove the leading word
