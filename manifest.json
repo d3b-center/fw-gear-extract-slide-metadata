@@ -14,7 +14,7 @@
     },
     "gear-builder": {
       "category": "utility",
-      "image": "chop.flywheel.io/d3b-extract-slide-metadata:0.1.2"
+      "image": "chop.flywheel.io/d3b-extract-slide-metadata:0.1.3"
     }
   },
   "environment": {
