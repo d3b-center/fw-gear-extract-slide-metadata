@@ -28,7 +28,7 @@ def process(input_path):
     """
     obj = openslide.OpenSlide(input_path)
     file_name = Path(input_path).stem
-    file_name = staintype(file_name)
+    harmonized_stain_type = staintype(file_name)
     file_dictionary = {}
     # add dimensions
     file_dictionary['Dimensions.Width'] = obj.dimensions[0]

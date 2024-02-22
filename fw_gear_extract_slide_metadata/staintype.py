@@ -277,4 +277,4 @@ def staintype(fname):
  elif re.search('.*YAP.*', fname):
     return('YAP')
  else:
-    return('No-stain type')
+    return('No-stain-type')
