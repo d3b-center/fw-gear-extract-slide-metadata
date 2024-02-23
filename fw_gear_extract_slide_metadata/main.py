@@ -3,7 +3,7 @@ import logging
 import os
 from pathlib import Path
 import openslide
-from staintype import staintype
+from fw_gear_extract_slide_metadata.staintype import staintype
 
 from fw_core_client import CoreClient
 from flywheel_gear_toolkit import GearToolkitContext
