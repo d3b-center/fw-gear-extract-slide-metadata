@@ -14,7 +14,7 @@
     },
     "gear-builder": {
       "category": "utility",
-      "image": "chop.flywheel.io/d3b-extract-slide-metadata:0.1.4"
+      "image": "chop.flywheel.io/d3b-extract-slide-metadata:0.1.6"
     }
   },
   "environment": {
@@ -43,5 +43,5 @@
   "maintainer": "D3b-TIRU <flywheel@d3b.center>",
   "name": "d3b-extract-slide-metadata",
   "source": "https://github.com/d3b-center/fw-extract-slide-metadata", 
-  "version": "0.1.4"
+  "version": "0.1.6"
 }
