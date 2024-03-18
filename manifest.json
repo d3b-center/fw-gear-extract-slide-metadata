@@ -14,7 +14,9 @@
     },
     "gear-builder": {
       "category": "utility",
+#1-adding-stain-type-into-file.info
       "image": "chop.flywheel.io/d3b-extract-slide-metadata:0.1.6"
+
     }
   },
   "environment": {
@@ -43,5 +45,7 @@
   "maintainer": "D3b-TIRU <flywheel@d3b.center>",
   "name": "d3b-extract-slide-metadata",
   "source": "https://github.com/d3b-center/fw-extract-slide-metadata", 
+ #1-adding-stain-type-into-file.info
   "version": "0.1.6"
+
 }

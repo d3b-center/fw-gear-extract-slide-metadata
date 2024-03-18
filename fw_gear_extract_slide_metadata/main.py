@@ -3,7 +3,7 @@ import logging
 import os
 from pathlib import Path
 import openslide
-from staintype import staintype
+from fw_gear_extract_slide_metadata.staintype import staintype
 
 from fw_core_client import CoreClient
 from flywheel_gear_toolkit import GearToolkitContext
@@ -34,7 +34,7 @@ def process(input_path):
     file_dictionary['Dimensions.Width'] = obj.dimensions[0]
     file_dictionary['Dimensions.Height'] = obj.dimensions[1]
     # adding stain info
-    file_dictionary['stain_type'] = file_name
+    file_dictionary['stain_type'] = harmonized_stain_type
     # add properties
     for item in obj.properties:
         tag_name = '.'.join(item.split('.')[1:]) # remove the leading word
