@@ -18,7 +18,7 @@ def staintype(fname):
     return('ATRX')
  elif re.search('.*ATTR.*', fname):
     return('ATTR')
- elif re.search('.*B-Catenin.*', fname) or re.search('.*BCATENIN.*', fname) or re.search('.*Beta_cat.*',fname) or re.search('.*Beta_catenin.*', fname) or re.search('.*Beta-catinin.*', fname) or re.search('.*B-catenin.*',fname) or re.search('*B-catenin.*',fname) or re.search('B-cat.*',fname) or re.search('B-CAT.*',fname) or re.search('B-catenin.*',fname) or re.search('Beta_CAT.*',fname) or re.search('beta_catenin.*',fname) or re.search('Beta_Catenin.*',fname) or re.search('Beta-CAT.*',fname) or re.search('Beta-Cat.*',fname) or re.search('Beta-catenin.*',fname) or re.search('Beta-Catenin.*',fname):
+ elif re.search('.*B-Catenin.*', fname) or re.search('.*BCATENIN.*', fname) or re.search('.*Beta_cat.*',fname) or re.search('.*Beta_catenin.*', fname) or re.search('.*Beta-catinin.*', fname) or re.search('.*B-catenin.*',fname) or re.search('.*B-catenin.*',fname) or re.search('B-cat.*',fname) or re.search('B-CAT.*',fname) or re.search('B-catenin.*',fname) or re.search('Beta_CAT.*',fname) or re.search('beta_catenin.*',fname) or re.search('Beta_Catenin.*',fname) or re.search('Beta-CAT.*',fname) or re.search('Beta-Cat.*',fname) or re.search('Beta-catenin.*',fname) or re.search('Beta-Catenin.*',fname):
     return('B-Catenin')
  elif re.search('.*BCoR.*', fname):
     return('BCoR')
@@ -156,7 +156,7 @@ def staintype(fname):
     return('INI1')
  elif re.search('.*Iron.*', fname):
     return('Iron')
- elif re.search('.*Ki-67.*', fname) or re.search('*Ki67.*',fname) or re.search('*KI67.*',fname) or re.search('*ki67.*',fname) or re.search('KI-67.*',fname) or re.search('Ki067.*',fname) or re.search('KI67.*',fname):
+ elif re.search('.*Ki-67.*', fname) or re.search('.*Ki67.*',fname) or re.search('.*KI67.*',fname) or re.search('.*ki67.*',fname) or re.search('KI-67.*',fname) or re.search('Ki067.*',fname) or re.search('KI67.*',fname):
     return('Ki-67')
  elif re.search('.*Klover.*', fname) or re.search('.*Kluver.*', fname) or re.search('KLOVER.*',fname):
     return('Kluver')
