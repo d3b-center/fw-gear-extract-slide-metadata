@@ -226,7 +226,7 @@ def staintype(fname):
     return('PRL')
  elif re.search('.*RA21.*', fname):
     return('RA21')
- elif re.search('.*RET.*', fname) or re.search('Ret_.*') or re.search('Ret',fname):
+ elif re.search('.*RET.*', fname) or re.search('Ret_.*',fname) or re.search('Ret',fname):
     return('RET')
  elif re.search('.*RETIC.*', fname) or re.search('.*Reticulin.*', fname) or re.search('.*retic.*',fname) or re.search('reticulin.*',fname):
     return('Reticulin')
