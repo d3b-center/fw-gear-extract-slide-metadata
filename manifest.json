@@ -44,7 +44,6 @@
   "maintainer": "D3b-TIRU <flywheel@d3b.center>",
   "name": "d3b-extract-slide-metadata",
   "source": "https://github.com/d3b-center/fw-extract-slide-metadata", 
- #1-adding-stain-type-into-file.info
   "version": "0.1.7"
 
 }
