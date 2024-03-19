@@ -130,7 +130,7 @@ def staintype(fname):
     return('GMS')
  elif re.search('.*GRAM.*', fname):
     return('GRAM')
- elif re.search('.*HandE.*', fname) or re.search('.*H&E.*', fname) or re.search('.*HEE.*', fname) or re.search('.*HHE.*',fname) or re.search('.*H_and_E.*', fname) or re.search('.*HE.*', fname) or re.search('.*he.*',fname) or re.search('Hand_.*',fname) or re.search('Hand_D.*',fname):
+ elif re.search('.*HandE.*', fname) or re.search('.*H&E.*', fname) or re.search('.*HEE.*', fname) or re.search('.*HHE.*',fname) or re.search('.*H_and_E.*', fname) or re.search('.*HE.*', fname) or re.search('.*he.*',fname) or re.search('Hand_.*',fname) or re.search('Hand_D.*',fname) or re.search ('HandE.*',fname):
     return('HandE')
  elif re.search('.*H3K27me3.*', fname):
     return('H3K27me3')
