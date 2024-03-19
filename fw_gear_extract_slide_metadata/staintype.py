@@ -222,17 +222,17 @@ def staintype(fname):
     return('PHOX2B')
  elif re.search('.*PLAP.*', fname):
     return('PLAP')
- elif re.search('.*PRL.*', fname) or re.search('.*Prolactin.*', fname) or re.search('prolactin.*',fname):
+ elif re.search('.*PRL.*', fname) or re.search('.*Prolactin.*', fname) or re.search('prolactin',fname):
     return('PRL')
  elif re.search('.*RA21.*', fname):
     return('RA21')
  elif re.search('.*RET.*', fname) or re.search('Ret_.*',fname) or re.search('Ret',fname):
     return('RET')
- elif re.search('.*RETIC.*', fname) or re.search('.*Reticulin.*', fname) or re.search('.*retic.*',fname) or re.search('reticulin.*',fname):
+ elif re.search('.*RETIC.*', fname) or re.search('.*Reticulin.*', fname) or re.search('.*retic.*',fname) or re.search('reticulin.*',fname) or re.search('reticulin',fname):
     return('Reticulin')
- elif re.search('.*S100.*', fname) or re.search('S-100.*',fname) or re.search('s-100.*',fname):
+ elif re.search('.*S100.*', fname) or re.search('S-100.*',fname) or re.search('s-100.*',fname) or re.search('S-100',fname) or re.search('s-100',fname):
     return('S100')
- elif re.search('.*SALL4.*', fname) or re.search('Sall4.*',fname):
+ elif re.search('.*SALL4.*', fname) or re.search('Sall4.*',fname) or re.search('Sall4',fname):
     return('SALL4')
  elif re.search('.*SATB2.*', fname):
     return('SATB2')
@@ -248,7 +248,7 @@ def staintype(fname):
     return('STAT6')
  elif re.search('.*SV40.*', fname):
     return('SV40')
- elif re.search('.*SYN.*', fname) or re.search('.*Synapto.*', fname) or re.search('.*Synaptophysin.*', fname) or re.search('.*synapto.*',fname) or re.search('Syn.*',fname) or re.search('syn.*',fname) or re.search('synapto.*',fname) or re.search('synaptophysin.*',fname):
+ elif re.search('.*SYN.*', fname) or re.search('.*Synapto.*', fname) or re.search('.*Synaptophysin.*', fname) or re.search('.*synapto.*',fname) or re.search('Syn.*',fname) or re.search('syn.*',fname) or re.search('synapto.*',fname) or re.search('synaptophysin.*',fname) or re.search('Syn',fname) or re.search('Syn.*',fname) or re.search('syn',fname) or re.search('syn.*',fname) or re.search('synapto',fname) or re.search('synaptophysin',fname):
     return('Synaptophysin')
  elif re.search('.*T14.*', fname):
     return('T14')
@@ -262,7 +262,7 @@ def staintype(fname):
     return('TOXO')
  elif re.search('.*TP1.*', fname):
     return('TP1')
- elif re.search('.*TRICHROME.*', fname) or re.search('trichrome.*',fname) or re.search('Trichrome.*',fname):
+ elif re.search('.*TRICHROME.*', fname) or re.search('trichrome.*',fname) or re.search('Trichrome.*',fname) or re.search('Trichrome',fname):
     return('TRICHROME')
  elif re.search('.*Trimethyl.*', fname) or re.search('Trimeth.*',fname) or re.search('trimethyl.*',fname) or re.search('Trymethyl.*',fname) or re.search('trymethyl.*',fname):
     return('Trimethyl')
@@ -270,11 +270,11 @@ def staintype(fname):
     return('TSH')
  elif re.search('.*TTR.*', fname):
     return('TTR')
- elif re.search('.*VIM.*', fname) or re.search('.*Vimentin.*', fname) or re.search('Vim.*',fname) or re.search('vimentin.*',fname):
+ elif re.search('.*VIM.*', fname) or re.search('.*Vimentin.*', fname) or re.search('Vim.*',fname) or re.search('vimentin.*',fname) or re.search('Vim',fname) or re.search('vimentin',fname):
     return('Vimentin')
  elif re.search('.*WT1.*', fname):
     return('WT1')
- elif re.search('.*YAP.*', fname) or re.search('Yap.*',fname):
+ elif re.search('.*YAP.*', fname) or re.search('Yap.*',fname) or re.search('Yap',fname):
     return('YAP')
  else:
     return('No-stain-type')
