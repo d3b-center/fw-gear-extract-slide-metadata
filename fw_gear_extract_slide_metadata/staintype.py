@@ -156,7 +156,7 @@ def staintype(fname):
     return('INI1')
  elif re.search('.*Iron.*', fname):
     return('Iron')
- elif re.search('.*Ki-67.*', fname) or re.search('.*Ki67.*',fname) or re.search('.*KI67.*',fname) or re.search('.*ki67.*',fname) or re.search('KI-67.*',fname) or re.search('Ki067.*',fname) or re.search('KI67.*',fname):
+ elif re.search('.*Ki-67.*', fname) or re.search('.*Ki67.*',fname) or re.search('.*KI67.*',fname) or re.search('.*ki67.*',fname) or re.search('KI-67.*',fname) or re.search('Ki067.*',fname) or re.search('KI67.*',fname) or re.search('KI-67',fname) or re.search('Ki067',fname) or re.search('KI67',fname):
     return('Ki-67')
  elif re.search('.*Klover.*', fname) or re.search('.*Kluver.*', fname) or re.search('KLOVER.*',fname):
     return('Kluver')
