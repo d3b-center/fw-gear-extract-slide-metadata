@@ -10,7 +10,7 @@ def staintype(fname):
     return('AFB')
  elif re.search('.*AFP.*', fname):
     return('AFP')
- elif re.search('.*Alcian_blue.*', fname) or re.search('Alcian_Blue.*',fname) or re.search('alcian_blue.*',fname):
+ elif re.search('.*Alcian_blue.*', fname) or re.search('Alcian_Blue',fname) or re.search('alcian_blue',fname):
     return('Alcian_blue')
  elif re.search('.*ALK.*', fname):
     return('ALK')
@@ -22,7 +22,7 @@ def staintype(fname):
     return('B-Catenin')
  elif re.search('.*BCoR.*', fname):
     return('BCoR')
- elif re.search('.*Brach.*', fname) or re.search('.*Brachyury.*', fname) or re.search('.*BRACHYURY_CTRL.*',  fname) or re.search('.*BRACKYURY.*', fname) or re.search('brachyury.*',fname):
+ elif re.search('.*Brach.*', fname) or re.search('.*Brachyury.*', fname) or re.search('.*BRACHYURY_CTRL.*',  fname) or re.search('.*BRACKYURY.*', fname) or re.search('brachyury',fname):
     return('Brachyury')
  elif re.search('.*BRG-1.*', fname) or re.search('.*BRG1.*', fname) or re.search('BRG.*',fname):
     return('BRG1')
@@ -34,7 +34,7 @@ def staintype(fname):
     return('CD1')
  elif re.search('.*CD10[^0-9]', fname) or re.search('.*_CD10[^0-9]',fname) or re.search('CD10[^0-9]',fname):
     return('CD10')
- elif re.search('.*CD117[^0-9]', fname) or re.search('CD_117.*',fname) or re.search('CD-117.*',fname) or re.search('Cd117.*',fname) or re.search('CD117.*',fname):
+ elif re.search('.*CD117[^0-9]', fname) or re.search('CD_117.*',fname) or re.search('CD-117.*',fname) or re.search('Cd117.*',fname) or re.search('CD117.*',fname) or re.search('CD_117',fname):
     return('CD117')
  elif re.search('.*CD163[^0-9]', fname) or re.search('CD_163.*',fname) or re.search('CD-163.*',fname) or re.search('CD163.*',fname):
     return('CD163')
