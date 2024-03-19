@@ -32,47 +32,47 @@ def staintype(fname):
     return('CAM 5.2')
  elif re.search('.*CD1[^0-9]', fname):
     return('CD1')
- elif re.search('.*CD10[^0-9]', fname) or re.search('.*_CD10[^0-9]',fname) or re.search('CD10[^0-9]',fname):
+ elif re.search('.*CD10[^0-9]', fname) or re.search('.*_CD10[^0-9]',fname) or re.search('CD10[^0-9]',fname)or re.search('CD10',fname):
     return('CD10')
- elif re.search('.*CD117[^0-9]', fname) or re.search('CD_117.*',fname) or re.search('CD-117.*',fname) or re.search('Cd117.*',fname) or re.search('CD117.*',fname) or re.search('CD_117',fname):
+ elif re.search('.*CD117[^0-9]', fname) or re.search('CD_117.*',fname) or re.search('CD-117.*',fname) or re.search('Cd117.*',fname) or re.search('CD117.*',fname) or re.search('CD_117',fname) or re.search('CD-117',fname) or re.search('CD117',fname): 
     return('CD117')
- elif re.search('.*CD163[^0-9]', fname) or re.search('CD_163.*',fname) or re.search('CD-163.*',fname) or re.search('CD163.*',fname):
+ elif re.search('.*CD163[^0-9]', fname) or re.search('CD_163.*',fname) or re.search('CD-163',fname) or re.search('CD163.*',fname) or re.search('CD163',fname):
     return('CD163')
- elif re.search('.*CD19[^0-9]', fname) or re.search('CD19[^0-9]', fname):
+ elif re.search('.*CD19[^0-9]', fname) or re.search('CD19', fname):
     return('CD19')
- elif re.search('.*CD20[^0-9]', fname) or re.search('CD20[^0-9]', fname):
+ elif re.search('.*CD20[^0-9]', fname) or re.search('CD20', fname):
     return('CD20')
  elif re.search('.*CD3[^0-9]', fname):
     return('CD3')
- elif re.search('.*CD30[^0-9]', fname) or re.search('CD30[^0-9]', fname):
+ elif re.search('.*CD30[^0-9]', fname) or re.search('CD30', fname):
     return('CD30')
- elif re.search('.*CD31[^0-9]', fname) or re.search('CD31[^0-9]', fname):
+ elif re.search('.*CD31[^0-9]', fname) or re.search('CD31', fname):
     return('CD31')
- elif re.search('.*CD33[^0-9]', fname) or re.search('CD33[^0-9]', fname):
+ elif re.search('.*CD33[^0-9]', fname) or re.search('CD33', fname):
     return('CD33')
- elif re.search('.*CD34[^0-9]', fname) or re.search('.*_CD34[^0-9]',fname) or re.search('CD_34',fname) or re.search('CD34[^0-9]',fname):
+ elif re.search('.*CD34[^0-9]', fname) or re.search('.*_CD34[^0-9]',fname) or re.search('CD_34',fname) or re.search('CD34',fname) or re.search('CD_34.*',fname):
     return('CD34')
- elif re.search('.*CD4[^0-9]', fname) or re.search('CD4[^0-9]', fname):
+ elif re.search('.*CD4[^0-9]', fname) or re.search('CD4', fname):
     return('CD4')
  elif re.search('.*CD42[^0-9]', fname):
     return('CD42')
  elif re.search('.*CD30[^0-9]', fname):
     return('CD30')
- elif re.search('.*CD45[^0-9]', fname) or re.search('.*CD-45[^0-9]', fname) or re.search('CD_45.*',fname) or re.search('CD45.*',fname):
+ elif re.search('.*CD45[^0-9]', fname) or re.search('.*CD-45[^0-9]', fname) or re.search('CD_45.*',fname) or re.search('CD45',fname):
     return('CD45')
- elif re.search('.*CD5[^0-9]', fname) or re.search('CD5[^0-9]', fname):
+ elif re.search('.*CD5[^0-9]', fname) or re.search('CD5', fname):
     return('CD5')
- elif re.search('.*CD56[^0-9]', fname) or re.search('.*_CD56[^0-9]',fname) or re.search('CD56.*',fname):
+ elif re.search('.*CD56[^0-9]', fname) or re.search('.*_CD56[^0-9]',fname) or re.search('CD56',fname):
     return('CD56')
  elif re.search('.*CD57[^0-9]', fname) or re.search('.*CD-57[^0-9]', fname):
     return('CD57')
- elif re.search('.*CD68[^0-9]', fname) or re.search('CD_68.*',fname) or re.search('CD68.*',fname):
+ elif re.search('.*CD68[^0-9]', fname) or re.search('CD_68.*',fname) or re.search('CD68',fname):
     return('CD68')
- elif re.search('.*CD79[^0-9]', fname) or re.search('CD79.*',fname):
+ elif re.search('.*CD79[^0-9]', fname) or re.search('CD79',fname):
     return('CD79')
- elif re.search('.*CD8[^0-9]', fname) or re.search('CD8[^0-9]', fname):
+ elif re.search('.*CD8[^0-9]', fname) or re.search('CD8', fname):
     return('CD8')
- elif re.search('.*CD99[^0-9]', fname) or re.search('.*_CD99[^0-9]',fname) or re.search('CD_99.*',fname) or re.search('CD99.*',fname):
+ elif re.search('.*CD99[^0-9]', fname) or re.search('.*_CD99[^0-9]',fname) or re.search('CD_99.*',fname) or re.search('CD99',fname):
     return('CD99')
  elif re.search('.*CFAP.*', fname):
     return('CFAP')
