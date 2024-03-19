@@ -76,9 +76,9 @@ def staintype(fname):
     return('CD99')
  elif re.search('.*CFAP.*', fname):
     return('CFAP')
- elif re.search('.*Chrom.*', fname) or re.search('.*CHROMO.*', fname) or re.search('.*Chromograni.*', fname) or re.search('.*Chromogranin.*', fname) or re.search('.*Cromogranin.*', fname) or re.search('chromogranin.*',fname) or re.search('cromogranin.*',fname):
+ elif re.search('.*Chrom.*', fname) or re.search('.*CHROMO.*', fname) or re.search('.*Chromograni.*', fname) or re.search('.*Chromogranin.*', fname) or re.search('.*Cromogranin.*', fname) or re.search('chromogranin',fname) or re.search('cromogranin',fname):
     return('Chromogranin')
- elif re.search('.*CYTOKERATIN.*', fname) or re.search('cytokeratin.*',fname) or re.search('Cytokeratin.*',fname):
+ elif re.search('.*CYTOKERATIN.*', fname) or re.search('cytokeratin.*',fname) or re.search('Cytokeratin.*',fname) or re.search('cytokeratin',fname) or re.search('Cytokeratin',fname):
     return('CK')
  elif re.search('.*CK20.*', fname):
     return('CK20')
@@ -102,13 +102,13 @@ def staintype(fname):
     return('Factor VIII')
  elif re.search('.*Factor_XIII.*', fname) or re.search('.*FACTOR_XIII.*',fname):
     return('Factor XIII')
- elif re.search('.*Filamin.*', fname) or re.search('.*Fimamin.*', fname) or re.search('filamin.*',fname):
+ elif re.search('.*Filamin.*', fname) or re.search('.*Fimamin.*', fname) or re.search('filamin',fname):
     return('Filamin')
  elif re.search('.*FITES.*', fname):
     return(f"Fite's")
  elif re.search('.*Fontana.*', fname):
     return('Fontana')
- elif re.search('FS.*', fname):
+ elif re.search('FS', fname):
     return('FS')
  elif re.search('.*FSB.*', fname):
     return('FSB')
@@ -118,7 +118,7 @@ def staintype(fname):
     return('GAB-1')
  elif re.search('.*GATA3.*', fname):
     return('GATA3')
- elif re.search('.*GFAP.*', fname) or re.search('.*gfap.*',fname) or re.search('GFAp.*',fname):
+ elif re.search('.*GFAP.*', fname) or re.search('.*gfap.*',fname) or re.search('GFAp',fname):
     return('GFAP')
  elif re.search('.*GH.*', fname):
     return('GH')
@@ -160,7 +160,7 @@ def staintype(fname):
     return('Ki-67')
  elif re.search('.*Klover.*', fname) or re.search('.*Kluver.*', fname) or re.search('KLOVER.*',fname):
     return('Kluver')
- elif re.search('.*Langerin.*', fname) or re.search('.*Langherin.*', fname) or re.search('langerin.*',fname):
+ elif re.search('.*Langerin.*', fname) or re.search('.*Langherin.*', fname) or re.search('langerin',fname):
     return('Langerin')
  elif re.search('.*LEF.*', fname):
     return('LEF-1')
@@ -178,7 +178,7 @@ def staintype(fname):
     return('MIC2')
  elif re.search('.*MYOD1.*', fname):
     return('MYOD1')
- elif re.search('.*MYOG.*', fname) or re.search('.*MyOGENIN.*', fname) or re.search('Myogenin.*',fname):
+ elif re.search('.*MYOG.*', fname) or re.search('.*MyOGENIN.*', fname) or re.search('Myogenin',fname):
     return('MYOG')
  elif re.search('.*NB84.*', fname):
     return('NB84')
@@ -188,25 +188,25 @@ def staintype(fname):
     return('NF2')
  elif re.search('.*NF_2F11.*', fname) or re.search('.*NF2F11.*', fname) or re.search('.*NF2FII.*', fname) or re.search('.*NF2N11.*', fname):
     return('NF2F11')
- elif re.search('.*Neurofilament.*', fname) or re.search('.*NF.*', fname) or re.search('.*NFP.*', fname) or re.search('Neurofilamen.*',fname) or re.search('neurofilament.*',fname):
+ elif re.search('.*Neurofilament.*', fname) or re.search('.*NF.*', fname) or re.search('.*NFP.*', fname) or re.search('Neurofilamen',fname) or re.search('neurofilament',fname):
     return('NFP')
  elif re.search('.*NKX2.2.*', fname):
     return('NKX2.2')
  elif re.search('.*NSE.*', fname):
     return('NSE')
- elif re.search('.*O13.*', fname) or re.search('o13.*',fname):
+ elif re.search('.*O13.*', fname) or re.search('o13',fname):
     return('O13')
  elif re.search('.*Octa-4.*', fname) or re.search('.*OCTA4.*', fname) or re.search('OCT.*',fname) or re.search('Octa.*',fname) or re.search('OCTA.*',fname):
     return('Octa-4')
  elif re.search('.*Olig.*', fname) or re.search('OLIg.*',fname):
     return('OLIG')
- elif re.search('.*OLIG2.*', fname) or re.search('OLIG-2.*',fname) or re.search('OLIG_2.*',fname):
+ elif re.search('.*OLIG2.*', fname) or re.search('OLIG-2.*',fname) or re.search('OLIG_2.*',fname) or re.search('OLIG_2',fname) or re.search('OLIG-2',fname):
     return('OLIG2')
  elif re.search('.*ORO.*', fname):
     return('ORO')
  elif re.search('.*P52.*', fname):
     return('P52')
- elif re.search('.*P53.*', fname) or re.search('.*p53.*',fname) or re.search('p53.*',fname):
+ elif re.search('.*P53.*', fname) or re.search('.*p53.*',fname) or re.search('p53.*',fname) or re.search('p53',fname):
     return('P53')
  elif re.search('.*Pan_Keratin.*', fname):
     return('Pan-Keratin')
