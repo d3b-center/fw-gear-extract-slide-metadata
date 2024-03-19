@@ -50,7 +50,7 @@ def staintype(fname):
     return('CD31')
  elif re.search('.*CD33[^0-9]', fname) or re.search('CD33[^0-9]', fname):
     return('CD33')
- elif re.search('.*CD34[^0-9]', fname) or re.search('.*_CD34[^0-9]',fname) or re.search('CD_34[^0-9]',fname) or re.search('CD34[^0-9]',fname):
+ elif re.search('.*CD34[^0-9]', fname) or re.search('.*_CD34[^0-9]',fname) or re.search('CD_34',fname) or re.search('CD34[^0-9]',fname):
     return('CD34')
  elif re.search('.*CD4[^0-9]', fname) or re.search('CD4[^0-9]', fname):
     return('CD4')
