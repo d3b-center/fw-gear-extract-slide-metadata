@@ -1,12 +1,11 @@
 """Main module."""
 import logging
-import os
-from pathlib import Path
+# import os
+# from pathlib import Path
 import openslide
-from fw_gear_extract_slide_metadata.staintype import staintype
 
-from fw_core_client import CoreClient
-from flywheel_gear_toolkit import GearToolkitContext
+# from fw_core_client import CoreClient
+# from flywheel_gear_toolkit import GearToolkitContext
 import flywheel
 
 from .run_level import get_analysis_run_level_and_hierarchy
@@ -27,14 +26,10 @@ def process(input_path):
         dict: Dictionary containing the file meta.
     """
     obj = openslide.OpenSlide(input_path)
-    file_name = Path(input_path).stem
-    harmonized_stain_type = staintype(file_name)
     file_dictionary = {}
     # add dimensions
     file_dictionary['Dimensions.Width'] = obj.dimensions[0]
     file_dictionary['Dimensions.Height'] = obj.dimensions[1]
-    # adding stain info
-    file_dictionary['stain_type'] = harmonized_stain_type
     # add properties
     for item in obj.properties:
         tag_name = '.'.join(item.split('.')[1:]) # remove the leading word

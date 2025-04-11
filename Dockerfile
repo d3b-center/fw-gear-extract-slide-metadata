@@ -13,13 +13,13 @@ RUN apt-get install python-openslide --yes
 # Install main deps
 RUN pip install poetry
 COPY pyproject.toml poetry.lock $FLYWHEEL/
-RUN poetry install --no-dev --no-root
+RUN poetry install --no-root
 
 COPY run.py manifest.json README.md $FLYWHEEL/
 COPY fw_gear_extract_slide_metadata ${FLYWHEEL}/fw_gear_extract_slide_metadata 
 
 # Installing the current project (most likely to change, above install is cached)
-RUN poetry install --no-dev
+RUN poetry install
 
 # Configure entrypoint
 RUN chmod a+x $FLYWHEEL/run.py
